@@ -12,7 +12,6 @@ public class LoginUsuario {
         boolean sucesso = autenticar.autenticar(email, password);
         if (!sucesso) {
             System.out.println("Falha no login. Credenciais inválidas.");
-
             return false;
         }
         System.out.println("Login realizado com sucesso!");

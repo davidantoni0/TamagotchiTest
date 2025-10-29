@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class MenuTamagotchi {
     public void exibirMenu() {
         int opcao = 0;
+        Scanner scanner = new Scanner(System.in);
 
         while (opcao != 4) {
             
@@ -11,7 +12,6 @@ public class MenuTamagotchi {
             System.out.println("3. Ver status do Tamagotchi");
             System.out.println("4. Sair");
             System.out.print("Escolha uma opção: ");
-            Scanner scanner = new Scanner(System.in);
             
             try {
                 opcao = scanner.nextInt();

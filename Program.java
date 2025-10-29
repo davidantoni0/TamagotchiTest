@@ -34,7 +34,9 @@ public class Program {
             case 1:
                 System.out.println("Login selecionado.");
                 LoginUsuario login = new LoginUsuario();
-                login.login();
+                if(login.login()){
+                    
+                };
                 break;
             case 2:
                 CadastrarUsuario cadastro = new CadastrarUsuario();
