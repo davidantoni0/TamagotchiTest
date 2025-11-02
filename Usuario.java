@@ -1,0 +1,24 @@
+public class Usuario {
+    private String nomeUsuario;
+    private String email;
+    private String senha;
+
+    public Usuario(String nomeUsuario, String email, String senha) {
+        this.nomeUsuario = nomeUsuario;
+        this.email = email;
+        this.senha = senha;
+    }
+
+
+    public String getUserName() {
+        return nomeUsuario;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return senha;
+    }
+}

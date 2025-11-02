@@ -3,11 +3,11 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class Program {
-    public static Queue<User> users = new ArrayDeque<>();
+    public static Queue<Usuario> usuarios = new ArrayDeque<>();
     public static void main(String[] args) {
 
         //usuario teste
-        users.add(new User("teste", "qwerty@gmail.com", "123456"));
+        usuarios.add(new Usuario("teste", "qwe", "qwe"));
 
         int opcao = 0;
         Scanner scanner = new Scanner(System.in);
@@ -35,7 +35,8 @@ public class Program {
                 System.out.println("Login selecionado.");
                 LoginUsuario login = new LoginUsuario();
                 if(login.login()){
-                    
+                    MenuTamagotchi menu = new MenuTamagotchi();
+                        menu.showMenu();
                 };
                 break;
             case 2:

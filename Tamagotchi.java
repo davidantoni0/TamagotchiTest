@@ -1,36 +1,36 @@
 public class Tamagotchi {
-    private String name;
-    private int age;
-    private int hungerLevel;
-    private int happinessLevel;
+    private String nome;
+    private int idade;
+    private int nivelFome;
+    private int nivelFelicidade;
 
-    public Tamagotchi(String name) {
-        this.name = name;
-        this.age = 0;
-        this.hungerLevel = 50; // Initial hunger level
-        this.happinessLevel = 50; // Initial happiness level
+    public Tamagotchi(String nome) {
+        this.nome = nome;
+        this.idade = 0;
+        this.nivelFome = 50; // Initial hunger level
+        this.nivelFelicidade = 50; // Initial happiness level
     }
     public String getName() {
-        return name;
+        return nome;
     }
     public int getAge() {
-        return age;
+        return idade;
     }
     public int getHungerLevel() {
-        return hungerLevel;
+        return nivelFome;
     }
     public int getHappinessLevel() {
-        return happinessLevel;
+        return nivelFelicidade;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String nome) {
+        this.nome = nome;
     }
-    public void setHungerLevel(int hungerLevel) {
-        this.hungerLevel = hungerLevel;
+    public void setHungerLevel(int nivelFome) {
+        this.nivelFome = nivelFome;
         
     }
-    public void setHappinessLevel(int happinessLevel) {
-        this.happinessLevel = happinessLevel;
+    public void setHappinessLevel(int nivelFelicidade) {
+        this.nivelFelicidade = nivelFelicidade;
     }
 
 }

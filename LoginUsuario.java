@@ -7,9 +7,9 @@ public class LoginUsuario {
         System.out.print("Email: ");
         String email = scanner.nextLine();
         System.out.print("Senha: ");
-        String password = scanner.nextLine();
+        String senha = scanner.nextLine();
         AutenticarUsuario autenticar = new AutenticarUsuario();
-        boolean sucesso = autenticar.autenticar(email, password);
+        boolean sucesso = autenticar.autenticar(email, senha);
         if (!sucesso) {
             System.out.println("Falha no login. Credenciais inválidas.");
             return false;

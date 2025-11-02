@@ -9,7 +9,7 @@ public class CadastrarUsuario {
         String email = scanner.nextLine();
         System.out.print("Senha: ");
         String password = scanner.nextLine();
-        Program.users.add(new User(userName, email, password));
+        Program.usuarios.add(new Usuario(userName, email, password));
         System.out.println("Usuário criado com sucesso!");
 
     }    

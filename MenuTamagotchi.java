@@ -1,6 +1,8 @@
 import java.util.Scanner;
+import ClassesMenuTamagotchi.AlimentarTamagotchi;
+
 public class MenuTamagotchi {
-    public void exibirMenu() {
+    public void showMenu() {
         int opcao = 0;
         Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +26,8 @@ public class MenuTamagotchi {
             switch (opcao) {
                 case 1:
                     System.out.println("Você escolheu alimentar o Tamagotchi.");
-                    // Lógica para alimentar o Tamagotchi
+                    AlimentarTamagotchi alimentarTamagotchi = new AlimentarTamagotchi();
+                    alimentarTamagotchi.alimentar();
                     break;
                 case 2:
                     System.out.println("Você escolheu brincar com o Tamagotchi.");
