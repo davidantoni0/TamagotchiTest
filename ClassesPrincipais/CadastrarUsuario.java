@@ -1,3 +1,4 @@
+package ClassesPrincipais;
 import java.util.Scanner;
 public class CadastrarUsuario {
     public void cadastrar() {

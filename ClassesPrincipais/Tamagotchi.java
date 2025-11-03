@@ -1,3 +1,4 @@
+package ClassesPrincipais;
 public class Tamagotchi {
     private String nome;
     private int idade;
@@ -7,8 +8,8 @@ public class Tamagotchi {
     public Tamagotchi(String nome) {
         this.nome = nome;
         this.idade = 0;
-        this.nivelFome = 50; // Initial hunger level
-        this.nivelFelicidade = 50; // Initial happiness level
+        this.nivelFome = 50;
+        this.nivelFelicidade = 50;
     }
     public String getNome() {
         return nome;

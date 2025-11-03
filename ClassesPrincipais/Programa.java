@@ -1,3 +1,4 @@
+package ClassesPrincipais;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
@@ -18,10 +19,11 @@ public class Programa {
         System.out.println("Bem vindo.");
 
         while(opcao != 3){
-        System.out.println("Escolha uma opção:");
+        
         System.out.println("1 - Login");
         System.out.println("2 - Registrar");
         System.out.println("3 - Sair");
+        System.out.print("Escolha uma opção: ");
 
         try {
             opcao = scanner.nextInt();
