@@ -2,9 +2,17 @@ import java.util.Scanner;
 import ClassesMenuTamagotchi.AlimentarTamagotchi;
 
 public class MenuTamagotchi {
-    public void showMenu() {
+    public void mostrarMenu(Usuario usuarioLogado) {
+        Tamagotchi tamagotchi = usuarioLogado.getTamagotchi();
+        if (tamagotchi == null) {
+            System.out.println("Você ainda não tem um Tamagotchi!");
+            return;
+        }
+
         int opcao = 0;
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Olá," + tamagotchi.getNome() + " quer saber o que fazer.");
 
         while (opcao != 4) {
             

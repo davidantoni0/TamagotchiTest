@@ -2,12 +2,16 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Program {
+public class Programa {
     public static Queue<Usuario> usuarios = new ArrayDeque<>();
     public static void main(String[] args) {
 
         //usuario teste
-        usuarios.add(new Usuario("teste", "qwe", "qwe"));
+         Usuario usuarioTeste = new Usuario("Zé da Manga", "qwe", "qwe");
+        usuarioTeste.setTamagotchi(new Tamagotchi("TamagotchiTest"));
+        usuarios.add(usuarioTeste);
+
+
 
         int opcao = 0;
         Scanner scanner = new Scanner(System.in);
@@ -34,9 +38,10 @@ public class Program {
             case 1:
                 System.out.println("Login selecionado.");
                 LoginUsuario login = new LoginUsuario();
-                if(login.login()){
+                Usuario usuarioLogado = login.login();
+                if(usuarioLogado != null){
                     MenuTamagotchi menu = new MenuTamagotchi();
-                        menu.showMenu();
+                        menu.mostrarMenu(usuarioLogado);
                 };
                 break;
             case 2:
