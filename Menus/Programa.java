@@ -1,7 +1,12 @@
-package ClassesPrincipais;
+package Menus;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
+
+import CadastroLogin.CadastrarUsuario;
+import CadastroLogin.LoginUsuario;
+import ClassesPrincipais.Tamagotchi;
+import ClassesPrincipais.Usuario;
 
 public class Programa {
     public static Queue<Usuario> usuarios = new ArrayDeque<>();

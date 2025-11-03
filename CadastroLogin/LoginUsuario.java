@@ -1,5 +1,8 @@
-package ClassesPrincipais;
+package CadastroLogin;
 import java.util.Scanner;
+
+import ClassesPrincipais.Usuario;
+import Menus.Programa;
 public class LoginUsuario {
     
     public Usuario login() {
@@ -10,7 +13,7 @@ public class LoginUsuario {
         System.out.print("Senha: ");
         String senha = scanner.nextLine();
         for (Usuario usuario : Programa.usuarios) {
-            if (usuario.getEmail().equals(email) && usuario.getPassword().equals(senha)) {
+            if (usuario.getEmail().equalsIgnoreCase(email) && usuario.getSenha().equals(senha)) {
                 System.out.println("Login bem-sucedido!");
                 return usuario;
             }

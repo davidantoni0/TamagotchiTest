@@ -21,7 +21,7 @@ public class Usuario {
         return email;
     }
 
-    public String getPassword() {
+    public String getSenha() {
         return senha;
     }
 

@@ -1,7 +1,9 @@
-package ClassesPrincipais;
+package Menus;
 import java.util.Scanner;
 import ClassesMenuTamagotchi.AlimentarTamagotchi;
 import ClassesMenuTamagotchi.BrincarTamagotchi;
+import ClassesPrincipais.Tamagotchi;
+import ClassesPrincipais.Usuario;
 
 public class MenuTamagotchi {
     public void mostrarMenu(Usuario usuarioLogado) {
@@ -19,10 +21,10 @@ public class MenuTamagotchi {
         while (opcao != 4) {
             
             System.out.println("=== Menu Tamagotchi ===");
-            System.out.println("1. Alimentar Tamagotchi");
-            System.out.println("2. Brincar com Tamagotchi");
-            System.out.println("3. Ver status do Tamagotchi");
-            System.out.println("4. Sair");
+            System.out.println("1 - Alimentar Tamagotchi");
+            System.out.println("2 - Brincar com Tamagotchi");
+            System.out.println("3 - Ver status do Tamagotchi");
+            System.out.println("4 - Sair");
             System.out.print("Escolha uma opção: ");
             
             try {

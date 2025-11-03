@@ -8,11 +8,11 @@ public class AlimentarTamagotchi {
         int opcao = 0;
 
         while(opcao !=5){
-            System.out.println("Bolinho de arroz(+10)");
-            System.out.println("Batata frita(+15)");
-            System.out.println("X-burger(+20)");
-            System.out.println("Fatia de Pizza(+25)");
-            System.out.println("sair");
+            System.out.println("1 - Bolinho de arroz(+10)");
+            System.out.println("2 - Batata frita(+15)");
+            System.out.println("3 - X-burger(+20)");
+            System.out.println("4 - Fatia de Pizza(+25)");
+            System.out.println("5 - Voltar");
             System.out.print("Escolha uma opção: ");
 
             try {
