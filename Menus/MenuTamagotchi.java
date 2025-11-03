@@ -2,6 +2,7 @@ package Menus;
 import java.util.Scanner;
 import ClassesMenuTamagotchi.AlimentarTamagotchi;
 import ClassesMenuTamagotchi.BrincarTamagotchi;
+import ClassesMenuTamagotchi.StatusTamagotchi;
 import ClassesPrincipais.Tamagotchi;
 import ClassesPrincipais.Usuario;
 
@@ -35,6 +36,7 @@ public class MenuTamagotchi {
                 scanner.next();
                 continue;
             }
+            System.out.println();
             switch (opcao) {
                 case 1:
                     System.out.println("Você escolheu alimentar o Tamagotchi.");
@@ -47,8 +49,9 @@ public class MenuTamagotchi {
                     brincarTamagotchi.brincar(tamagotchi);
                     break;
                 case 3:
-                    System.out.println("Exibindo status do Tamagotchi.");
-                    // Lógica para exibir status do Tamagotchi
+                    System.out.println("Exibindo status do Tamagotchi.\n");
+                    StatusTamagotchi statusTamagotchi = new StatusTamagotchi();
+                    statusTamagotchi.status(tamagotchi);
                     break;
                 case 4:
                     System.out.println("Saindo do menu Tamagotchi.");
